@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MovieDBApp</string>
+
+    <string name="movie_list_header">List of Movies</string>
+
+    <string name="title">Title</string>
+    <string name="release_date">Release Date</string>
+    <string name="popularity">Popularity</string>
+    <string name="votes">Number of Votes</string>
+    <string name="video">Video</string>
+    <string name="adult">Adult Theme</string>
+    <string name="id">Identification Number</string>
+    <string name="overview">Movie Overview</string>
+</resources>

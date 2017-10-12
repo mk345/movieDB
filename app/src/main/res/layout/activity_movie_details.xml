@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mk.test.moviedbapp.MainActivity">
+
+    <ImageView
+        android:id="@+id/movieImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Movie Details"/>
+
+    <TextView
+        android:id="@+id/release_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Release Date"/>
+
+    <TextView
+        android:id="@+id/popularity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Popularity"/>
+
+    <TextView
+        android:id="@+id/votes_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Votes Count"/>
+
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID"/>
+
+    <TextView
+        android:id="@+id/video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Video"/>
+
+    <TextView
+        android:id="@+id/adult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adult"/>
+
+    <TextView
+        android:id="@+id/overview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ovewview"/>
+
+</LinearLayout>
