@@ -47,6 +47,7 @@ public class MovieListAdapter extends RecyclerView.Adapter<MovieListAdapter.View
         viewHolder.title.setText(mMovieList.get(position).getTitle());
         viewHolder.releaseDate.setText(mMovieList.get(position).getReleaseDate());
         viewHolder.popularity.setText(String.valueOf(mMovieList.get(position).getPopularity()));
+        viewHolder.votes.setText(String.valueOf(mMovieList.get(position).getVotesCount()));
 
         String imageURL = "https://image.tmdb.org/t/p/w500/" + mMovieList.get(position).getImageURL();
         new DownloadImageTask((ImageView) viewHolder.movieImage).execute(imageURL);
@@ -88,6 +89,7 @@ public class MovieListAdapter extends RecyclerView.Adapter<MovieListAdapter.View
         public TextView title;
         public TextView releaseDate;
         public TextView popularity;
+        public TextView votes;
         public ImageView movieImage;
 
         public ViewHolder(View view) {
@@ -98,6 +100,7 @@ public class MovieListAdapter extends RecyclerView.Adapter<MovieListAdapter.View
             title = (TextView) view.findViewById(R.id.title);
             releaseDate = (TextView) view.findViewById(R.id.release_date);
             popularity = (TextView) view.findViewById(R.id.popularity);
+            votes = (TextView) view.findViewById(R.id.votes_count);
 
             movieImage = (ImageView) view.findViewById(R.id.movieImage);
         }
