@@ -1,17 +1,12 @@
 package com.mk.test.moviedbapp;
 
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.LoaderManager;
 import android.support.v4.content.Loader;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-import java.io.InputStream;
 
 /**
  * Created by Michael on 10/10/2017.
@@ -65,11 +60,6 @@ public class MovieDetailsActivity extends AppCompatActivity implements LoaderMan
             video = bundle.getBoolean("video");
             adult = bundle.getBoolean("adult");
             overview = bundle.getString("overview");
-
-            //Log.e("TEST", imageURL);
-            //movieImageIV.set
-
-
         }
 
         titleTV.setText(title);
@@ -89,11 +79,7 @@ public class MovieDetailsActivity extends AppCompatActivity implements LoaderMan
         }
         overviewTV.setText(String.valueOf(overview));
 
-        //new DownloadImageTask((ImageView) findViewById(R.id.movieImage)).execute(imageURL);
-
         getSupportLoaderManager().initLoader(1, null, this).forceLoad();
-
-
     }
 
     @Override
@@ -110,30 +96,4 @@ public class MovieDetailsActivity extends AppCompatActivity implements LoaderMan
     public void onLoaderReset(Loader<Bitmap> loader) {
         //
     }
-/*
-    private class DownloadImageTask extends AsyncTask<String, Void, Bitmap> {
-        ImageView bmImage;
-
-        public DownloadImageTask(ImageView bmImage) {
-            this.bmImage = bmImage;
-        }
-
-        protected Bitmap doInBackground(String... urls) {
-            String urldisplay = urls[0];
-            Bitmap mIcon11 = null;
-            try {
-                InputStream in = new java.net.URL(urldisplay).openStream();
-                mIcon11 = BitmapFactory.decodeStream(in);
-            } catch (Exception e) {
-                Log.e("Error", e.getMessage());
-                e.printStackTrace();
-            }
-            return mIcon11;
-        }
-
-        protected void onPostExecute(Bitmap result) {
-            bmImage.setImageBitmap(result);
-        }
-    }
-    */
 }

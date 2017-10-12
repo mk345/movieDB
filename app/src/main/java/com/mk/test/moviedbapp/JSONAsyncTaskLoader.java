@@ -54,7 +54,6 @@ public class JSONAsyncTaskLoader extends AsyncTaskLoader<JSONObject> {
                 stringBuffer.append(line);
             }
 
-            //return stringBuffer.toString();
             return new JSONObject(stringBuffer.toString());
         } catch(Exception ex) {
             Log.e(TAG, "AsyncTaskData", ex);

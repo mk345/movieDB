@@ -26,25 +26,16 @@ public class MovieListAdapter extends RecyclerView.Adapter<MovieListAdapter.View
 
     Context context;
     private ArrayList<Movie> mMovieList;
-    //private final View.OnClickListener mOnClickListener;
-    //private ItemClickListener itemClickListener;
 
     public MovieListAdapter(Context context, ArrayList<Movie> movieList) {
         this.context = context;
         mMovieList = movieList;
-        //mOnClickListener = new MainActivity.MovieItemOnClickListener();
-        //this.itemClickListener = itemClickListener;
     }
 
     @Override
     public MovieListAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
         View view = layoutInflater.inflate(R.layout.item_movie, parent, false);
-
-        //view.setOnClickListener(mOnClickListener);
-
-        //MovieListAdapter.ViewHolder movieListViewHolder = new MovieListAdapter.ViewHolder(view);
-        //return movieListViewHolder;
 
         ViewHolder viewHolder = new ViewHolder(view);
         return viewHolder;
@@ -59,7 +50,6 @@ public class MovieListAdapter extends RecyclerView.Adapter<MovieListAdapter.View
 
         String imageURL = "https://image.tmdb.org/t/p/w500/" + mMovieList.get(position).getImageURL();
         new DownloadImageTask((ImageView) viewHolder.movieImage).execute(imageURL);
-        //viewHolder.movieImage
 
         viewHolder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -99,13 +89,9 @@ public class MovieListAdapter extends RecyclerView.Adapter<MovieListAdapter.View
         public TextView releaseDate;
         public TextView popularity;
         public ImageView movieImage;
-        //public View layout;
-
-        //private ItemClickListener itemClickListener;
 
         public ViewHolder(View view) {
             super(view);
-            //layout = view;
 
             cardView = (CardView) view.findViewById(R.id.card_view);
 
@@ -142,9 +128,5 @@ public class MovieListAdapter extends RecyclerView.Adapter<MovieListAdapter.View
             bmImage.setImageBitmap(result);
         }
     }
-
-
-
-
 
 }
