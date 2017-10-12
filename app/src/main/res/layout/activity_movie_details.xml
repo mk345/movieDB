@@ -5,60 +5,118 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.mk.test.moviedbapp.MainActivity">
+    tools:context="com.mk.test.moviedbapp.MainActivity"
+    android:background="@color/colorLightBlue">
 
     <ImageView
         android:id="@+id/movieImage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
+        android:layout_marginTop="2dp"
         android:scaleType="centerCrop"/>
 
     <TextView
+        style="@style/Label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title"/>
+
+    <TextView
         android:id="@+id/title"
-        android:layout_width="wrap_content"
+        style="@style/Info"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Movie Details"/>
 
     <TextView
+        style="@style/Label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/release_date"/>
+
+    <TextView
         android:id="@+id/release_date"
-        android:layout_width="wrap_content"
+        style="@style/Info"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Release Date"/>
 
     <TextView
+        style="@style/Label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/popularity"/>
+
+    <TextView
         android:id="@+id/popularity"
-        android:layout_width="wrap_content"
+        style="@style/Info"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Popularity"/>
 
     <TextView
+        style="@style/Label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/votes"/>
+
+    <TextView
         android:id="@+id/votes_count"
-        android:layout_width="wrap_content"
+        style="@style/Info"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Votes Count"/>
 
     <TextView
+        style="@style/Label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/id"/>
+
+    <TextView
         android:id="@+id/id"
-        android:layout_width="wrap_content"
+        style="@style/Info"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="ID"/>
 
     <TextView
+        style="@style/Label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/video"/>
+
+    <TextView
         android:id="@+id/video"
-        android:layout_width="wrap_content"
+        style="@style/Info"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Video"/>
 
     <TextView
+        style="@style/Label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/adult"/>
+
+    <TextView
         android:id="@+id/adult"
-        android:layout_width="wrap_content"
+        style="@style/Info"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Adult"/>
 
     <TextView
+        style="@style/Label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/overview"/>
+
+    <TextView
         android:id="@+id/overview"
-        android:layout_width="wrap_content"
+        style="@style/Info"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Ovewview"/>
 

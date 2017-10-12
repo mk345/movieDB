@@ -33,7 +33,6 @@ public class ImageAsyncTaskLoader extends AsyncTaskLoader<Bitmap> {
 
     @Override
     public Bitmap loadInBackground() {
-        //String urldisplay = mImageURL;
         Bitmap bitmap = null;
         try {
             InputStream inputStream = new java.net.URL(mImageURL).openStream();
