@@ -16,7 +16,6 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<JSONObject> {
 
-    //private Button button0;
     private RecyclerView mRecyclerView;
     private RecyclerView.Adapter mMovieListAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
