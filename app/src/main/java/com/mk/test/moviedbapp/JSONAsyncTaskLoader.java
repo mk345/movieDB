@@ -20,7 +20,7 @@ import java.net.URLConnection;
 
 public class JSONAsyncTaskLoader extends AsyncTaskLoader<JSONObject> {
 
-    private static String URLHit = "https://api.themoviedb.org/3/movie/upcoming?api_key=3e58c17f67f7e33ee9d262afaaf16fa5&language=en-US";
+    private static String URLHit = "https://api.themoviedb.org/3/movie/upcoming?api_key=KEY&language=en-US";
     private static String TAG = "JSON AsyncTask Loader";
 
     private JSONObject mJSONObject;
